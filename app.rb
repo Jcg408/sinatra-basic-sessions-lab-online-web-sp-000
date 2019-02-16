@@ -12,8 +12,8 @@ class App < Sinatra::Base
   end
   
   get '/' do
-    session[:item] = 
-    @session = session[:item]
+    session[:item] = params[:item]
+    @session = session
     
   end
   
