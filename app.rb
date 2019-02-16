@@ -12,6 +12,7 @@ class App < Sinatra::Base
   end
   
   get '/' do
+    session[:item] = 
     @session = session[:item]
     
   end
